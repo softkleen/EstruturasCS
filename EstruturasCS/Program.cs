@@ -44,9 +44,6 @@ namespace EstruturasCS
 
             // Array - Matrizes
 
-            // Queue - Filas
-
-            // Stack - Pilhas
 
             // List - Listas
             List<Carro> carros = new List<Carro>(); 
@@ -64,6 +61,26 @@ namespace EstruturasCS
                 new Carro("Ford", "Focus", "Branco", "BGT7896")
                 ) ? "Tem sim, mano!" : "Tem não, Sangue!";
             Console.WriteLine(teste);
+            Console.WriteLine($"A lista possui {carros.Count} carros");
+
+            // Queue - Filas
+            Queue<string> fila = new Queue<string>();
+            fila.Enqueue("José");
+            fila.Enqueue("Bruna");
+            fila.Enqueue("Gui");
+            //exibe o número de elementos na fila
+            Console.WriteLine($"Número de pessoas na fila: {fila.Count}");
+            Console.WriteLine($"Proximo da fila: {fila.Peek()}");
+            Console.WriteLine($"Número de pessoas na fila: {fila.Count}");
+            Console.WriteLine($"Cliente {fila.Dequeue()}, será atendido no guichê 4");
+            Console.WriteLine($"Número de pessoas na fila: {fila.Count}");
+            Console.WriteLine($"Proximo da fila: {fila.Peek()}");
+            fila.Enqueue("Julio");
+            Console.WriteLine("O cliente Julio, entrou na fila");
+            Console.WriteLine($"Número de pessoas na fila: {fila.Count}");
+            // Stack - Pilhas
+
+
             Console.ReadKey();
 
         }
