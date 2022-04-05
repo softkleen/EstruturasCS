@@ -69,7 +69,7 @@ namespace EstruturasCS
             fila.Enqueue("Bruna");
             fila.Enqueue("Gui");
             //exibe o número de elementos na fila
-            Console.WriteLine($"Número de pessoas na fila: {fila.Count}");
+            Console.WriteLine($"Número de pessoas na fila: {fila.Count} ");
             Console.WriteLine($"Proximo da fila: {fila.Peek()}");
             Console.WriteLine($"Número de pessoas na fila: {fila.Count}");
             Console.WriteLine($"Cliente {fila.Dequeue()}, será atendido no guichê 4");
@@ -78,9 +78,15 @@ namespace EstruturasCS
             fila.Enqueue("Julio");
             Console.WriteLine("O cliente Julio, entrou na fila");
             Console.WriteLine($"Número de pessoas na fila: {fila.Count}");
+            
             // Stack - Pilhas
-
-
+            Stack<int> pilha = new Stack<int>();    
+            pilha.Push(12);// adiciona elemento na pilha
+            pilha.Push(13);
+            pilha.Push(14);
+            pilha.Push(15);
+            Console.WriteLine($"Removemos o primeiro elemento da pilha: {pilha.Pop()}");
+            Console.WriteLine($"Próximo elemento da pilha: {pilha.Peek()}");
             Console.ReadKey();
 
         }
