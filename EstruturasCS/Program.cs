@@ -87,8 +87,15 @@ namespace EstruturasCS
             pilha.Push(15);
             Console.WriteLine($"Removemos o primeiro elemento da pilha: {pilha.Pop()}");
             Console.WriteLine($"Próximo elemento da pilha: {pilha.Peek()}");
+
+                
+                  
+            
             Console.ReadKey();
 
+            Console.WriteLine(cores.azul);   
+
         }
+        enum cores{ azul, verde, vermelho, branco, cinza};
     }
 }
