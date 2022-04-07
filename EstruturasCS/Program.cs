@@ -3,6 +3,7 @@ using System.Collections.Generic; //biblioteca
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLabNu;
 
 namespace EstruturasCS
 {
@@ -89,13 +90,26 @@ namespace EstruturasCS
             Console.WriteLine($"Próximo elemento da pilha: {pilha.Peek()}");
 
                 
-                  
+            Console.WriteLine(cores.azul);
             
+           if (Usuario.EfetuarLogin("nome", "senac"))
+            { 
+                // logado com sucesso
+            }
+
+            Usuario usuario = new Usuario("Zé","ze@arroba",new Nivel("do Caixa","cx"),"12547");
+            Console.WriteLine(usuario.Nome + " - " + usuario.Nivel.Nome);
+            //usuario.Id = 10;
+            Nivel nivel = new Nivel("dfd","45");
+
+            nivel.Alterar(1, "cx");
+           
+
             Console.ReadKey();
 
-            Console.WriteLine(cores.azul);   
 
         }
         enum cores{ azul, verde, vermelho, branco, cinza};
+      
     }
 }
